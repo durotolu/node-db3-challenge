@@ -22,7 +22,7 @@ router.get('/:id', (req, res) => {
     if (scheme) {
       res.json(scheme);
     } else {
-      res.status(404).json({ message: 'Could not find scheme with given id.' })
+      res.status(404).json({ null: 'Could not find scheme with given id.' })
     }
   })
   .catch(err => {
